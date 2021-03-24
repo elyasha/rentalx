@@ -8,8 +8,10 @@ services:
             - 3333:3333
         volumes: 
             - .:/usr/app
+        restart: always
         depends_on:
             - database_ignite
+
     database_ignite:
         image: postgres
         container_name: database_ignite
@@ -22,6 +24,7 @@ services:
             - POSTGRES_DB=rentx
         volumes:
             - pgdata:/data/postgres
+ 
 
 volumes:
     pgdata:
