@@ -1,10 +1,10 @@
 
 import { inject, injectable } from "tsyringe"
-import { IUsersRepository } from "../../repositories/IUsersRepository"
+import { IUsersRepository } from "@modules/accounts/repositories/IUsersRepository"
 import { sign } from 'jsonwebtoken'
 
 import { compare } from 'bcryptjs'
-import { AppError } from "../../../../errors/AppError"
+import { AppError } from "@errors/AppError"
 
 
 interface IRequest {
