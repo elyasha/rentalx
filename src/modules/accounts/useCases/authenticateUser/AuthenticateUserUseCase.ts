@@ -4,7 +4,7 @@ import { IUsersRepository } from "@modules/accounts/repositories/IUsersRepositor
 import { sign } from 'jsonwebtoken'
 
 import { compare } from 'bcryptjs'
-import { AppError } from "@errors/AppError"
+import { AppError } from "@shared/errors/AppError"
 
 
 interface IRequest {
